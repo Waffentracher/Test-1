@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" href="/Test-1/favicon.svg" type="image/svg+xml">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Tech Titans</title>
+	
+  <script type="module" crossorigin src="/Test-1/commonHelpers.js"></script>
+  <link rel="modulepreload" crossorigin href="/Test-1/assets/vendor-9ebebf38.js">
+  <link rel="stylesheet" href="/Test-1/assets/vendor-d2eacb2b.css">
+  <link rel="stylesheet" href="/Test-1/assets/index-19ab369b.css">
+</head>
+
+<body class="">
+	<header class="header-main" id="header">
+	<div class="div-header container">
+		<div class="header-logo">
+			<p class="header-logo-p">LLOYD<span
+					class="header-logo-span">JEFFERSON.</span></p>
+		</div>
+
+		<div class="header-menu">
+			<div class="switch-theme"></div>
+			<div class="header-menu-title">
+				<button class="burger button-reset js-open-menu" aria-expanded="false"
+					aria-controls="mobile-menu">
+					<div class="burger-line burger-line-first"></div>
+					<div class="burger-line burger-line-second"></div>
+					<div class="burger-line burger-line-third"></div>
+					<div class="burger-line burger-line-fourth"></div>
+				</button>
+				</button>
+
+			</div>
+			<nav class="header-menu-div">
+				<ul class="header-menu-items">
+					<li class="header-menu-li">
+					</li>
+					<li class="header-menu-li"><a href="#about-me">About me</a></li>
+					<li class="header-menu-li"><a href="#projects">Projects</a></li>
+					<li class="header-menu-li"><a href="#contacts">Contacts</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+<div class="go-top">
+	<svg width="30" height="15">
+		<use href="/Test-1/assets/sprite-ade9423b.svg#arrow"></use>
+	</svg>
+</div>
+	<main class="main">
+		<section class="hero-section">
+	<div class="container">
+		<h1 class="hero-h1">
+			<span class="profile-row">
+				<span class="profile-hello-span">HELLO, I AM</span>
+				<span class="profile-picture-span">
+					<picture>
+						<source srcset="data:image/webp;base64,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 1x, /Test-1/assets/smallPortrait@2x-646de736.webp 2x" type="image/webp" />
+						<source srcset="/Test-1/assets/smallPortrait@1x-becf016b.png 1x, /Test-1/assets/smallPortrait@2x-013b623d.png 2x" type="image/jpg" />
+						<img class="profile-picture" src="/Test-1/assets/smallPortrait@1x-becf016b.png"
+							alt="Profile Picture" loading="lazy" />
+					</picture>
+				</span>
+			</span>
+			<span class="fullstack-developer-span">FULLSTACK DEVELOPER</span>
+		</h1>
+
+		<div class="hero-div-for-dectop">
+			<a href="#contacts" class="hero-button">
+				<svg width="30" height="15">
+					<use href="/Test-1/assets/sprite-ade9423b.svg#arrow"></use>
+				</svg>
+				<span class="burron-text">Order the project</span> </a>
+
+			<p class="hero-history">I WORK WITH PEOPLE ALL OVER THE
+				WORLD TO
+				CREATE
+				<span class="hero-history-accent">IMPRESSIVE</span> AND
+				<span class="hero-history-accent">FUNCTIONAL WEBSITES</span>
+				THAT REFLECT EACH CLIENT'S UNIQUE PERSONALITY.
+			</p>
+		</div>
+	</div>
+
+
+
+	<div class="hero-social-div">
+		<ul class="hero-social-list">
+			<li class="hero-social-li"><a href="https://www.instagram.com/goitclub/"
+					target="_blank" та rel="noopener noreferrer">Instagram</a></li>
+			<li class="hero-social-li"><a href="https://www.facebook.com/goITclub/"
+					target="_blank" та rel="noopener noreferrer">Facebook</a></li>
+			<li class="hero-social-li"><a href="https://www.youtube.com/c/GoIT"
+					target="_blank" та rel="noopener noreferrer">YouTube</a></li>
+			<li class="hero-social-li"><a
+					href="https://github.com/Fovardell/tech-titans" target="_blank" та
+					rel="noopener noreferrer">GitHub</a></li>
+		</ul>
+
+	</div>
+
+</section>
+		<section>
+	<div class="container my-section-about">
+
+		<h2 class="title" id="about-me">
+			ABOUT <span class="title-accent">ME</span>
+		</h2>
+		<div class="about-content-photo-description">
+			<div class="about-content-photo">
+
+
+				<picture>
+					<!-- Mobile images (max-width: 767px) -->
+					<source srcset="/Test-1/assets/about-Lloyd-mob-@1x-b402bf58.png 1x, /Test-1/assets/about-Lloyd-mob-@2x-deadf97c.png 2x" media="(max-width: 767px)"
+						type="image/png" />
+					<source srcset="/Test-1/assets/about-Lloyd-mob-@1x-bd991234.webp 1x, /Test-1/assets/about-Lloyd-mob-@2x-a664f39c.webp 2x" media="(max-width: 767px)"
+						type="image/webp" />
+
+					<!-- Tablet images (768px - 1279px) -->
+					<source srcset="/Test-1/assets/about-Lloyd-tablet-@1x-4aad15c5.png 1x, /Test-1/assets/about-Lloyd-tablet-@2x-4f9e4560.png 2x" media="(max-width: 1279px)"
+						type="image/png" />
+					<source srcset="/Test-1/assets/about-Lloyd-tablet-@1x-45b6d778.webp 1x, /Test-1/assets/about-Lloyd-tablet-@2x-117bed9d.webp 2x"
+						media="(max-width: 1279px)" type="image/webp" />
+
+					<!-- Desktop images (min-width: 1280px) -->
+					<source srcset="/Test-1/assets/about-Lloyd-desktop-@1x-ede7a548.png 1x, /Test-1/assets/about-Lloyd-desktop-@2x-caad7151.png 2x" media="(min-width: 1280px)"
+						type="image/png" />
+					<source srcset="/Test-1/assets/about-Lloyd-desktop-@1x-23092f49.webp 1x, /Test-1/assets/about-Lloyd-desktop-@2x-5105bf6c.webp 2x"
+						media="(min-width: 1280px)" type="image/webp" />
+					<img class="about-photo" src="/Test-1/assets/about-Lloyd-mob-@1x-b402bf58.png"
+						alt="Lloyd Jefferson" loading="lazy" />
+				</picture>
+			</div>
+			<div class="info-block block-bio">
+				<h3 class="about-description-title">BIO</h3>
+				<p class="about-description-text text text">
+					I'm Lloyd Jefferson, a talented programmer specializing in software
+					development. My expertise spans various programming
+					languages and technologies, and I am dedicated to continually
+					enhancing my skills. I thrive on seeking unconventional
+					and creative solutions to problems, leveraging a high level of
+					analytical skills to effectively tackle even the most
+					challenging tasks.
+				</p>
+				<p class="about-description-text text">
+					Adaptable to both independent and team-oriented work, I collaborate
+					seamlessly with colleagues, exchanging ideas and
+					finding optimal solutions. My professional maturity enables me to
+					navigate challenges and stressful situations with a
+					calm demeanor, maintaining a consistently high quality of work.
+					Committed to self-improvement, I actively engage in
+					studying new technologies and practices to stay current with the
+					latest innovations in the field.
+				</p>
+			</div>
+		</div>
+		<div class="about-content-text">
+			<div class="info-block block-list">
+				<h3 class="about-description-title">EDUCATION</h3>
+				<ul class="about-edu-list">
+					<li class="about-edu-item">
+						<p class="text">
+							2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+							York
+						</p>
+					</li>
+					<li class="about-edu-item">
+						<p class="text">
+							2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+							School, New York
+						</p>
+					</li>
+					<li class="about-edu-item">
+						<p class="text">
+							2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="info-block block-list">
+				<h3 class="about-description-title">ROLE</h3>
+				<ul class="about-edu-list">
+					<li class="about-edu-item about-edu-item-role">
+						<p class="text">
+							Frontend development
+						</p>
+					</li>
+					<li class="about-edu-item about-edu-item-role">
+						<p class="text">
+							HeadlessCMS, Wordpress
+						</p>
+					</li>
+					<li class="about-edu-item about-edu-item-role">
+						<p class="text">
+							Blender (enjoy)
+						</p>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</section>
+		<section class="tech-skills">
+	<h2 class="tech-skills-header visually-hidden">Tech Skills</h2>
+	<div class="tech-skills-line green">
+		<div class="marquee__inner">
+			<ul class="tech-skills-list green">
+				<li class="tech-skills-list-item green">HTML/CSS</li>
+				<li class="tech-skills-list-item green">JavaScript</li>
+				<li class="tech-skills-list-item green">React</li>
+				<li class="tech-skills-list-item green">Node.js</li>
+				<li class="tech-skills-list-item green">React Native</li>
+				<li class="tech-skills-list-item green">TypeScript</li>
+			</ul>
+			<ul class="tech-skills-list green">
+				<li class="tech-skills-list-item green">HTML/CSS</li>
+				<li class="tech-skills-list-item green">JavaScript</li>
+				<li class="tech-skills-list-item green">React</li>
+				<li class="tech-skills-list-item green">Node.js</li>
+				<li class="tech-skills-list-item green">React Native</li>
+				<li class="tech-skills-list-item green">TypeScript</li>
+			</ul>
+		</div>
+	</div>
+	<div class="tech-skills-line gray">
+		<div class="marquee__inner">
+			<ul class="tech-skills-list gray">
+				<li class="tech-skills-list-item gray">HTML/CSS</li>
+				<li class="tech-skills-list-item gray">JavaScript</li>
+				<li class="tech-skills-list-item gray">React</li>
+				<li class="tech-skills-list-item gray">Node.js</li>
+				<li class="tech-skills-list-item gray">React Native</li>
+				<li class="tech-skills-list-item gray">TypeScript</li>
+			</ul>
+			<ul class="tech-skills-list gray">
+				<li class="tech-skills-list-item gray">HTML/CSS</li>
+				<li class="tech-skills-list-item gray">JavaScript</li>
+				<li class="tech-skills-list-item gray">React</li>
+				<li class="tech-skills-list-item gray">Node.js</li>
+				<li class="tech-skills-list-item gray">React Native</li>
+				<li class="tech-skills-list-item gray">TypeScript</li>
+			</ul>
+		</div>
+	</div>
+</section>
+		<section class="my-projects">
+	<div class="container">
+		<h2 class="projects-title" id="projects">
+			MY<span class="projects-span"> PROJECTS</span>
+		</h2>
+		<ul class="projects-list"></ul>
+		<button class="projects-load">LOAD MORE </button>
+	</div>
+</section>
+		<section class="section benefits">
+  <div class="container">
+    <h2 class="benefits-title"><span>Benefits</span> of working with me</h2>
+    <ul class="benefits-list">
+      <li class="benefits-list-item">
+        <div class="benefits-icons-section">
+          <svg class="benefits-icon-item" width="48" height="48">
+            <use href="/Test-1/assets/sprite-ade9423b.svg#expertise"></use>
+          </svg>
+        </div>
+        <p class="benefits-subtitle">Expertise</p>
+        <p class="benefits-item-text">
+          With extensive experience in development, I have a deep understanding
+          of programming and website development.
+        </p>
+      </li>
+      <li class="benefits-list-item">
+        <div class="benefits-icons-section">
+          <svg class="benefits-icon-item" width="48" height="48">
+            <use href="/Test-1/assets/sprite-ade9423b.svg#communication"></use>
+          </svg>
+        </div>
+        <p class="benefits-subtitle">Communication</p>
+        <p class="benefits-item-text">
+          Understanding your needs and wants is my priority and I am always
+          available for discussions and open to corrections.
+        </p>
+      </li>
+      <li class="benefits-list-item">
+        <div class="benefits-icons-section">
+          <svg class="benefits-icon-item" width="48" height="48">
+            <use href="/Test-1/assets/sprite-ade9423b.svg#art"></use>
+          </svg>
+        </div>
+        <p class="benefits-subtitle">Art</p>
+        <p class="benefits-item-text">
+          Thanks to my creative nature, I am ready to accept challenges and help
+          you bring your ideas to life.
+        </p>
+      </li>
+      <li class="benefits-list-item">
+        <div class="benefits-icons-section">
+          <svg class="benefits-icon-item" width="48" height="48">
+            <use href="/Test-1/assets/sprite-ade9423b.svg#urgent-execution"></use>
+          </svg>
+        </div>
+        <p class="benefits-subtitle">Urgent execution</p>
+        <p class="benefits-item-text">
+          I understand how important time is to you. Ready to work quickly and
+          efficiently, without reducing the quality of work.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+		<section class="faq">
+	<div class="container">
+		<h2 class="title">
+			frequently asked <span class="title-accent">question</span>
+		</h2>
+		<div class="accordion-container">
+			<div class="ac">
+				<h2 class="ac-header">
+					<button type="button" class="ac-trigger">
+						<p class="faq-questions">
+							What programming languages
+							​​are most often used in your project?
+						</p>
+						<div class="more-content">
+							<div class="first-line ac-opened"></div>
+							<div class="second-line ac-opened"></div>
+						</div>
+					</button>
+				</h2>
+				<div class="ac-panel">
+					<p class="ac-text">In the field of web development, there are various
+						technologies and programming languages. Typically, this includes a
+						combination of frontend (client side) and backend (server side)
+						languages.</p>
+				</div>
+			</div>
+			<div class="ac">
+				<h2 class="ac-header">
+					<button type="button" class="ac-trigger">
+						<p class="faq-questions">
+							What are the deadlines for
+							the project?
+						</p>
+						<div class="more-content">
+							<div class="first-line ac-opened"></div>
+							<div class="second-line ac-opened"></div>
+						</div>
+					</button>
+				</h2>
+				<div class="ac-panel">
+					<p class="ac-text">The terms of project implementation depend to a
+						large extent on a number of factors, such as the scope of the
+						project, its complexity, and the availability of resources.
+						Determining exact deadlines is a difficult task, and it usually
+						occurs during the planning phase of the project.</p>
+				</div>
+			</div>
+			<div class="ac">
+				<h2 class="ac-header">
+					<button type="button" class="ac-trigger">
+						<p class="faq-questions">
+							What payment methods do you
+							accept?
+						</p>
+						<div class="more-content">
+							<div class="first-line ac-opened"></div>
+							<div class="second-line ac-opened"></div>
+						</div>
+					</button>
+				</h2>
+				<div class="ac-panel">
+					<p class="ac-text">Payment through credit and debit cards such as
+						Visa, MasterCard, specialized electronic payment systems such as
+						PayPal, as well as payments in cryptocurrencies such as Bitcoin,
+						Ethereum and others.</p>
+				</div>
+			</div>
+			<div class="ac">
+				<h2 class="ac-header">
+					<button type="button" class="ac-trigger">
+						<p class="faq-questions">
+							How can I contact
+							you?
+						</p>
+						<div class="more-content">
+							<div class="first-line ac-opened"></div>
+							<div class="second-line ac-opened"></div>
+						</div>
+					</button>
+				</h2>
+				<div class="ac-panel">
+					<p class="ac-text">In the field of web development, there are various
+						technologies and programming languages. Typically, this includes a
+						combination of frontend (client side) and backend (server side)
+						languages.</p>
+				</div>
+			</div>
+			<div class="ac">
+				<h2 class="ac-header">
+					<button type="button" class="ac-trigger">
+						<p class="faq-questions">
+							Do you provide advice or
+							support?
+						</p>
+						<div class="more-content">
+							<div class="first-line ac-opened"></div>
+							<div class="second-line ac-opened"></div>
+						</div>
+					</button>
+				</h2>
+				<div class="ac-panel">
+					<p class="ac-text">The terms of project implementation depend to a
+						large extent on a number of factors, such as the scope of the
+						project, its complexity, and the availability of resources.
+						Determining exact deadlines is a difficult task, and it usually
+						occurs during the planning phase of the project.</p>
+				</div>
+			</div>
+			<div class="ac">
+				<h2 class="ac-header">
+					<button type="button" class="ac-trigger">
+						<p class="faq-questions">
+							What does the process of
+							developing a software product look like from idea to
+							implementation?
+						</p>
+						<div class="more-content">
+							<div class="first-line ac-opened"></div>
+							<div class="second-line ac-opened"></div>
+						</div>
+					</button>
+				</h2>
+				<div class="ac-panel">
+					<p class="ac-text">Payment through credit and debit cards such as
+						Visa, MasterCard, specialized electronic payment systems such as
+						PayPal, as well as payments in cryptocurrencies such as Bitcoin,
+						Ethereum and others.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+		<section class="reviews">
+	<div class="container">
+		<h2 class="reviews-title">Reviews</h2>
+		<div class="swiper" id="reviews-swiper">
+			<div id="notification" class="notification"></div>
+			<ul class="swiper-wrapper" id="slide"></ul>
+			<div class="reviews-slider">
+				<div class="swiper-button-prev">
+					<svg width="24" height="24" class="swiper-button">
+						<use href="/Test-1/assets/sprite-ade9423b.svg#icon-arrow-right"></use>
+					</svg>
+				</div>
+				<div class="swiper-button-next">
+					<svg width="24" height="24" class="swiper-button">
+						<use href="/Test-1/assets/sprite-ade9423b.svg#icon-arrow-right"></use>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+		<section class="work-together">
+	<div class="container">
+		<h2 class="title" id="contacts">
+			let’s<span class="title-accent">work together</span>
+		</h2>
+		<div class="contacts-wrapper">
+			<div class="info-block contacts-block">
+				<p class="attantion-text attantion-text-contacts">
+					Contact me to transform your ideas into exceptional solutions.
+				</p>
+				<address>
+					<ul class="adress-list">
+						<li class="address-item text">
+							<svg width="24" height="24">
+								<use href="/Test-1/assets/sprite-ade9423b.svg#icon-phone"></use>
+							</svg>
+							<a href="tel:+380904567890">+38 090
+								456 78 90
+							</a>
+						</li>
+						<li class="address-item text">
+							<svg width="24" height="24">
+								<use href="/Test-1/assets/sprite-ade9423b.svg#icon-mail"></use>
+							</svg>
+							<a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com
+							</a>
+						</li>
+						<li class="address-item text">
+							<svg width="24" height="24">
+								<use href="/Test-1/assets/sprite-ade9423b.svg#icon-location"></use>
+							</svg>
+							<a
+								href="https://www.google.com/maps/place/New+York,+NY,+USA/@40.6976312,-74.1444874,11z/data=!4m6!3m5!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2?authuser=0&entry=ttu">
+								USA,
+								New York</a>
+						</li>
+					</ul>
+				</address>
+			</div>
+			<form class="form">
+				<label class="contacts-label">
+					<input class="contacts-email form-items" type="text" name="user_email"
+						placeholder="Your email*">
+					<p class="invalid-email">
+						Invalid email, try again
+					</p>
+					<svg class="success-svg" width="16" height="16">
+						<use href="/Test-1/assets/sprite-ade9423b.svg#success-mark"></use>
+					</svg>
+				</label>
+
+				<label class="contacts-label">
+					<textarea class="contacts-message form-items" name="user_message"
+						placeholder="Message"></textarea>
+					<p class="invalid-text">
+						Message must contain from 10 characters
+					</p>
+					<svg class="success-svg" width="16" height="16">
+						<use href="/Test-1/assets/sprite-ade9423b.svg#success-mark"></use>
+					</svg>
+				</label>
+				<button class="contacts-button form-items" type="submit">SEND
+					MESSAGE</button>
+			</form>
+		</div>
+	</div>
+</section>
+	</main>
+	<footer class="footer">
+	<div class="container footer-container">
+		<nav class="footer-nav">
+			<a class="footer-logo" href="#header">Lloyd<span
+					class="jefferson">Jefferson.</span></a>
+			<ul class="social-media">
+				<li class="social">
+					<a target="_blank" rel="noopener noreferrer"
+						href="https://www.instagram.com/goitclub/">Instagram</a>
+				</li>
+				<li class="social">
+					<a target="_blank" rel="noopener noreferrer"
+						href="https://www.facebook.com/goITclub/">Facebook</a>
+				</li>
+				<li class="social">
+					<a target="_blank" rel="noopener noreferrer"
+						href="https://ua.linkedin.com/school/goit-start-your-career-in-it/?trk=similar-pages">Linkedin</a>
+				</li>
+				<li class="social">
+					<a target="_blank" rel="noopener noreferrer"
+						href="https://github.com/Fovardell/tech-titans">GitHub</a>
+				</li>
+			</ul>
+		</nav>
+		<p class="copyright">© Copyright 2024. Made by LloydJefferson</p>
+	</div>
+</footer>
+	<div class="modal-window is-hidden">
+	<div class="modal-content">
+		<button type="button" class="close">
+			<svg xmlns="http://www.w3.org/2000/svg">
+				<path d="M18 6 6 18M6 6l12 12" stroke-width="2" stroke-linecap="round"
+					stroke-linejoin="round" />
+			</svg>
+		</button>
+		<p class="modal-header"></p>
+		<p class="modal-text">
+		</p>
+	</div>
+</div>
+	<div class="menu-container js-menu-container " id="mobile-menu">
+	<ul class="navigation-mobile-list menu-items-opens">
+		<li class="navigation-items hero-social-li">
+			<a href="#about-me" class="menu-box-link">
+				About me
+			</a>
+		</li>
+		<li class="navigation-items hero-social-li">
+			<a href="#projects" class="menu-box-link">
+				Projects
+			</a>
+		</li>
+		<li class="navigation-items hero-social-li">
+			<a href="#contacts" class="menu-box-link">
+				Contacts
+			</a>
+		</li>
+	</ul>
+</div>
+	
+</body>
+
+</html>
