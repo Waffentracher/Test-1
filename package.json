@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "vite build --base=/tech-titans/",
+    "build": "vite build --base=/Test-1/",
     "preview": "vite preview",
     "p": "bash push.sh"
   },
@@ -39,7 +39,7 @@
   ],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "bugs": {
-    "url": "https://github.com/Fovardell/TechTitans/issues"
+    "url": "https://github.com/Waffentracher/Test-1/issues"
   },
-  "homepage": "https://fovardell.github.io/tech-titans/"
+  "homepage": "https://fovardell.github.io/Test-1/"
 }
